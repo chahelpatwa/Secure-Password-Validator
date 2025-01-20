@@ -1,5 +1,7 @@
 package com.example.password_validator.password_validator;
 
+import java.util.Set;
+
 public class PasswordValidator {
 
     public static String evaluatePasswordStrength(String password) {
@@ -56,9 +58,9 @@ public class PasswordValidator {
     }
 
     private static boolean containsSpecialChar(String password) {
-        String specialChars = "!@#$%^&*()-+[]{}|;:'\",.<>?/`~";
+        Set<Character> specialChars = Set.of('!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '+', '[', ']', '{', '}', '|', ';', ':', '\'', '\"', ',', '.', '<', '>', '?', '/', '`', '~');
         for (int i = 0; i < password.length(); i++) {
-            if (specialChars.indexOf(password.charAt(i)) != -1) {
+            if (specialChars.contains(password.charAt(i))) {
                 return true;
             }
         }
