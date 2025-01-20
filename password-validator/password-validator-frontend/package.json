@@ -1,0 +1,21 @@
+{
+  "name": "password-validator-frontend",
+  "version": "1.0.0",
+  "description": "A simple front-end application for validating passwords.",
+  "main": "src/scripts/app.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined yet.'"
+  },
+  "keywords": [
+    "password",
+    "validator",
+    "frontend"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
